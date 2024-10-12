@@ -24,7 +24,7 @@ function econtrar(idBuscar) {
         console.log(data);
     })
 
-    const dresultado = document.getElementById("resultadoFind");
+    const dresultado = document.getElementById("resultadoFind")
         dresultado.innerHTML = "";
     let  responseBody = "";
     if(data.lenght > 0) { 
