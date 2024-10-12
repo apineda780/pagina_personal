@@ -16,26 +16,15 @@ function econtrar(idBuscar) {
     
     fetch(urlEndPoint)
         .then((response) => {
-
-            const dresultado = document.getElementById("resultadoFind");
-                dresultado.innerHTML = "";
-
-            let respuesta = response.json();
-            console.log(respuesta);
+            console.log(response);
             let responseBody = "";
-            if (response.status == 200) {
-
-            } else {
-            responseBody = `<li><p><span class="negrita-no-found"> No se encontraron los resultados  </span></p></li>`;
+            if (response.status == 200)
         }
-
-        dresultado.innerHTML = responseBody;
-
         .then ((data) =>{
-        console.log(data)
+        console.log(data);
     })
 
-    const dresultado = document.getElementById("resultadoFind")
+    const dresultado = document.getElementById("resultadoFind");
         dresultado.innerHTML = "";
     let  responseBody = "";
     if(data.lenght > 0) { 
@@ -50,8 +39,6 @@ function econtrar(idBuscar) {
     dresultado.innerHTML = responseBody;
   
 
-
-
 }
 
-//hola profe soyyy Angiee....
+// hola profe soy angie 
